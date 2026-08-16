@@ -4,6 +4,8 @@
 - 17 páginas HTML (incluindo 404).
 - Percurso pedagógico: Preparação → Leitura → Compreensão → Aprofundamento → Revisão → Teste.
 - Guia de leitura com estimativas e roteiros por capítulos.
+- Acesso gratuito à obra por fonte oficial, por estar em domínio público.
+- Idade recomendada, nível de leitura e estimativa do percurso completo exibidos na página central e no guia.
 - Navegação sequencial entre as etapas.
 - Exercícios autorais com respostas comentadas.
 - Metadados básicos: title, description, robots, Open Graph e theme-color.

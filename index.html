@@ -80,6 +80,16 @@
     max-width:600px;margin:22px auto 0;
     font-size:14.5px;line-height:1.7;color:#443c32;text-align:left;
   }
+  .book-access{
+    max-width:650px;margin:20px auto 0;padding:16px 18px;
+    display:flex;align-items:center;gap:16px;text-align:left;
+    background:#f7efe3;border:1px solid var(--gold);border-radius:12px;
+  }
+  .book-access-text{flex:1;}
+  .book-access-text b{display:block;font-family:'Fraunces',serif;font-size:16px;margin-bottom:4px;}
+  .book-access-text span{display:block;font-size:12.5px;line-height:1.5;color:var(--muted);}
+  .book-access a{background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;white-space:nowrap;}
+  @media(max-width:620px){.book-access{align-items:flex-start;flex-direction:column}.book-access a{white-space:normal;}}
 
   .grid-wrap{max-width:860px;margin:0 auto;padding:32px 24px 10px;}
   .grid-label{
@@ -115,7 +125,10 @@
   .cta-text{flex:1;}
   .cta-text b{font-family:'Fraunces',serif;font-size:14px;display:block;margin-bottom:2px;}
   .cta-text span{font-size:12px;color:#cfc4b0;}
+  .cta-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
   .cta-btn{background:var(--gold);color:#211c17;font-size:12px;font-weight:700;padding:8px 14px;border-radius:7px;text-decoration:none;white-space:nowrap;}
+  .cta-btn.secondary{background:transparent;color:#f4ede1;border:1px solid #746856;}
+  @media(max-width:620px){.cta{align-items:flex-start;flex-wrap:wrap}.cta-actions{width:100%;justify-content:flex-start;margin-left:56px;}}
 
   .mini-widgets{max-width:860px;margin:0 auto 40px;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   @media(max-width:560px){.mini-widgets{grid-template-columns:1fr;}}
@@ -175,15 +188,22 @@
 <span><b>Gênero</b> Romance realista</span>
 <span><b>Narrador</b> Bentinho (1ª pessoa)</span>
 <span><b>Capítulos</b> 148</span>
+<span><b>Idade recomendada</b> a partir de 15 anos</span>
+<span><b>Nível de leitura</b> intermediário–avançado</span>
+</div>
+<div class="book-access">
+<div class="book-access-text"><b>Comece pelo livro</b><span><em>Dom Casmurro</em> está em domínio público. Baixe gratuitamente uma edição disponibilizada pelo Ministério da Educação.</span></div>
+<a href="https://machado.mec.gov.br/obra-completa-lista/item/31-dom-casm" rel="noopener" target="_blank">Baixar gratuitamente ↗</a>
 </div>
 <p class="synopsis"><strong>Este estudo não substitui a leitura de <em>Dom Casmurro</em>.</strong> O Hub Literário parte do princípio de que a obra foi lida — ou está sendo lida. Resumos ajudam a revisar, mas uma visão superficial não oferece base suficiente para interpretar o texto e enfrentar questões de prova.</p>
 <div id="roteiro" style="max-width:650px;margin:22px auto 0;text-align:left;background:#fdf6ee;border:1px solid var(--accent-soft);border-radius:12px;padding:18px 20px;">
 <div class="eyebrow" style="margin-bottom:12px;">Planeje seu estudo</div>
 <div class="facts" style="justify-content:flex-start;gap:10px 22px;line-height:1.8;">
 <span><b>Extensão</b> cerca de 200–250 páginas*</span>
-<span><b>Leitura</b> ~5–7 horas</span>
-<span><b>Estudo no Hub</b> ~1h30–2h</span>
+<span><b>Leitura</b> ~6–8 horas</span>
+<span><b>Estudo no Hub</b> ~2–3 horas</span>
 <span><b>Exercícios</b> ~20–30 min</span>
+<span><b>Percurso completo</b> cerca de 10 horas</span>
 </div>
 <p style="font-size:11px;color:var(--muted);margin:10px 0 0;">*O número de páginas varia conforme a edição. Os tempos são estimativas e dependem do ritmo de leitura e estudo.</p>
 <p style="font-size:13px;margin:14px 0 0;"><b>Percurso recomendado:</b> Leitura da obra → Compreensão → Aprofundamento → Revisão → Teste.</p>
@@ -195,7 +215,7 @@
 <div>
 <h2>Comece pela obra, não pelo resumo</h2>
 <p>Veja como organizar a primeira leitura, quanto tempo reservar e o que observar sem antecipar as interpretações centrais do romance.</p>
-<div class="route-mini"><span>148 capítulos</span><span>~200–250 páginas*</span><span>~5–7 h de leitura</span><span>roteiros de 3, 7 ou 14 dias</span></div>
+<div class="route-mini"><span>a partir de 15 anos</span><span>148 capítulos</span><span>~200–250 páginas*</span><span>~6–8 h de leitura</span><span>cerca de 10 h com o estudo</span><span>roteiros de 3, 7 ou 14 dias</span></div>
 </div>
 <a href="dom-casmurro/guia-de-leitura.html">Abrir guia de leitura →</a>
 </div>
@@ -238,7 +258,7 @@
 <b>Ainda não leu Dom Casmurro?</b>
 <span>Comece pela obra. Depois volte ao Hub para fazer o estudo completo.</span>
 </div>
-<a class="cta-btn" href="dom-casmurro/guia-de-leitura.html">Planejar a leitura →</a>
+<div class="cta-actions"><a class="cta-btn" href="https://machado.mec.gov.br/obra-completa-lista/item/31-dom-casm" rel="noopener" target="_blank">Baixar gratuitamente ↗</a><a class="cta-btn secondary" href="dom-casmurro/guia-de-leitura.html">Planejar a leitura →</a></div>
 </div>
 </div>
 <div class="mini-widgets">

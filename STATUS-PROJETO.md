@@ -13,6 +13,10 @@ Princípio central: o Hub Literário não substitui a leitura integral da obra. 
 A obra-modelo define o padrão a ser replicado e adaptado nas próximas obras.
 
 ### Elementos implementados
+- Regra de acesso à obra: “Baixe gratuitamente” para domínio público e “Compre o livro” para obras protegidas.
+- Indicação de idade recomendada, nível de leitura e tempo aproximado do percurso completo.
+- Dom Casmurro indicado a partir de 15 anos, com nível intermediário–avançado e cerca de 10 horas para leitura e compreensão dos aspectos essenciais.
+- Link para edição gratuita de Dom Casmurro disponibilizada pelo Ministério da Educação.
 - Guia de leitura antes dos conteúdos com spoilers.
 - Estimativa de extensão e tempo de leitura, sempre indicando que varia por edição e ritmo.
 - Roteiros de leitura de 3, 7 e 14 dias baseados em capítulos.
@@ -58,4 +62,4 @@ A obra-modelo recebeu acabamento técnico e editorial para publicação de teste
 2. Incluir referências bibliográficas/críticas selecionadas onde agregarem valor pedagógico.
 3. Criar páginas transversais por autor, escola literária e competência de interpretação.
 4. Transformar recursos futuros de busca/newsletter somente quando houver infraestrutura real.
-5. Replicar o padrão validado para O Cortiço.
+5. Somente após a aprovação integral de Dom Casmurro, escolher e iniciar a segunda obra. Nenhum conteúdo da segunda obra foi iniciado.
