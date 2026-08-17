@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contato | Hub Literário</title>
 <style>
-  :root{ --ink:#211c17; --paper:#f4ede1; --panel:#fffdf8; --line:#e4d8c3; --accent:#7c3f2c; --gold:#b8863b; --muted:#7a7062; }
+  :root{ --ink:#211c17; --paper:#f4ede1; --panel:#fffdf8; --line:#e4d8c3; --accent:#7c3f2c; --gold:#b8863b; --muted:#7a7062; --success:#27613a; --danger:#9b2c2c; }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;}
   a{color:inherit;}
-  header.site{ padding:14px 24px;border-bottom:1px solid var(--line); display:flex;justify-content:space-between;align-items:center; background:var(--panel);position:sticky;top:0;z-index:5; }
-  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:22px; text-decoration:none;}
-  .logo span{color:var(--accent); display:block; font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; font-family:'Inter',sans-serif; margin-top:2px;}
-  .breadcrumb{ max-width:800px;margin:0 auto;padding:24px 24px 0; font-size:12px;color:var(--muted); }
+  header.site{padding:14px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;background:var(--panel);position:sticky;top:0;z-index:5;}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:22px;text-decoration:none;}
+  .logo span{color:var(--accent);display:block;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-family:'Inter',sans-serif;margin-top:2px;}
+  .breadcrumb{max-width:800px;margin:0 auto;padding:24px 24px 0;font-size:12px;color:var(--muted);}
   .breadcrumb a{text-decoration:none;color:var(--gold);}
-  main{ max-width:800px;margin:0 auto;padding:40px 30px; background:var(--panel); border:1px solid var(--line); border-radius:14px; margin-top:14px; margin-bottom:40px; }
-  h1{ font-family:'Fraunces',serif;font-weight:600;font-size:2.5rem;margin:10px 0 20px; color:var(--accent); }
-  .article-body{ font-size:16px; line-height:1.7; color:#443c32; }
-  .article-body h2 { font-family:'Fraunces',serif; font-size:1.6rem; margin-top:30px; color:var(--ink); }
-  footer{background:var(--ink);color:#cfc4b0;padding:40px 24px 24px;text-align:center; font-size:12px;}
+  main{max-width:800px;margin:14px auto 40px;padding:40px 30px;background:var(--panel);border:1px solid var(--line);border-radius:14px;}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:2.5rem;margin:10px 0 16px;color:var(--accent);}
+  .intro{font-size:16px;line-height:1.7;color:#443c32;margin-bottom:26px;}
+  form{display:grid;gap:18px;}
+  label{display:grid;gap:7px;font-weight:600;color:#443c32;}
+  input,select,textarea{width:100%;border:1px solid #cbbda5;border-radius:8px;background:#fff;color:var(--ink);font:inherit;padding:12px 13px;}
+  input:focus,select:focus,textarea:focus{outline:3px solid rgba(184,134,59,.24);border-color:var(--gold);}
+  textarea{min-height:160px;resize:vertical;}
+  .consent{display:flex;align-items:flex-start;gap:10px;font-weight:400;font-size:14px;line-height:1.5;}
+  .consent input{width:auto;margin-top:4px;}
+  .consent a{color:var(--accent);}
+  .honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;}
+  button{justify-self:start;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;font-weight:700;padding:13px 22px;cursor:pointer;}
+  button:hover{background:#653223;}
+  button:disabled{opacity:.65;cursor:wait;}
+  #form-status{min-height:24px;margin:0;font-weight:600;}
+  #form-status.success{color:var(--success);}
+  #form-status.error{color:var(--danger);}
+  .privacy-note{font-size:13px;color:var(--muted);line-height:1.5;}
+  footer{background:var(--ink);color:#cfc4b0;padding:40px 24px 24px;text-align:center;font-size:12px;}
+  @media (max-width:600px){main{margin:10px 12px 30px;padding:28px 20px;}h1{font-size:2rem;}}
 </style>
-<meta content="Informações de contato e canais oficiais do Hub Literário." name="description"/><meta content="index, follow" name="robots"/><meta content="#211c17" name="theme-color"/><meta content="Contato | Hub Literário" property="og:title"/><meta content="Informações de contato e canais oficiais do Hub Literário." property="og:description"/><meta content="article" property="og:type"/><meta content="pt_BR" property="og:locale"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/><link rel="canonical" href="https://pmorollo.github.io/hub-literario/contato.html"/>
+<meta content="Envie dúvidas, correções, sugestões editoriais ou solicitações de privacidade ao Hub Literário." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#211c17" name="theme-color"/>
+<meta content="Contato | Hub Literário" property="og:title"/>
+<meta content="Envie dúvidas, correções e sugestões ao Hub Literário." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link rel="canonical" href="https://pmorollo.github.io/hub-literario/contato.html"/>
 </head>
 <body>
 <header class="site">
@@ -30,14 +53,88 @@
 <div class="breadcrumb"><a href="index.html">Início</a> › Contato</div>
 <main>
 <h1>Contato</h1>
-<div class="article-body">
-<p>O Hub Literário é um projeto educacional independente. No momento, não há formulário de contato, cadastro de usuário ou coleta direta de dados por esta página.</p>
-<p>Os canais oficiais para dúvidas, correções, sugestões editoriais e solicitações relacionadas à privacidade estão em preparação e serão divulgados nesta página.</p>
-<p>Até lá, nenhuma página do site solicitará dados pessoais para contato.</p>
-</div>
+<p class="intro">Use este canal para dúvidas, correções, sugestões editoriais ou solicitações relacionadas à privacidade. Respondemos quando necessário pelo e-mail informado.</p>
+<form id="contact-form">
+  <label for="nome">Nome
+    <input id="nome" name="nome" maxlength="100" autocomplete="name" required/>
+  </label>
+  <label for="email">E-mail
+    <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required/>
+  </label>
+  <label for="assunto">Assunto
+    <select id="assunto" name="assunto" required>
+      <option value="">Selecione</option>
+      <option>Dúvida sobre uma obra</option>
+      <option>Correção de conteúdo</option>
+      <option>Sugestão editorial</option>
+      <option>Privacidade e dados pessoais</option>
+      <option>Outro assunto</option>
+    </select>
+  </label>
+  <label for="mensagem">Mensagem
+    <textarea id="mensagem" name="mensagem" maxlength="5000" required></textarea>
+  </label>
+  <label class="honeypot" for="website" aria-hidden="true">Não preencha este campo
+    <input id="website" name="website" tabindex="-1" autocomplete="off"/>
+  </label>
+  <label class="consent" for="consentimento">
+    <input id="consentimento" name="consentimento" type="checkbox" required/>
+    <span>Li a <a href="politica-privacidade.html">Política de Privacidade</a> e autorizo o uso destes dados exclusivamente para responder a esta solicitação.</span>
+  </label>
+  <button id="submit-button" type="submit">Enviar mensagem</button>
+  <p id="form-status" role="status" aria-live="polite"></p>
+  <p class="privacy-note">Não envie senhas, documentos, dados bancários ou outras informações sensíveis.</p>
+</form>
 </main>
 <footer>
 <p>© 2026 Hub Literário. Todos os direitos reservados.</p>
 </footer>
+<script>
+(() => {
+  const endpoint = "https://hub-literario-api.pedro-morollo.workers.dev/contato";
+  const form = document.getElementById("contact-form");
+  const button = document.getElementById("submit-button");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    status.textContent = "";
+    status.className = "";
+    button.disabled = true;
+    button.textContent = "Enviando...";
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          nome: data.nome,
+          email: data.email,
+          assunto: data.assunto,
+          mensagem: data.mensagem,
+          website: data.website
+        })
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.error || "Não foi possível enviar a mensagem.");
+      }
+
+      form.reset();
+      status.textContent = result.message || "Mensagem enviada com sucesso.";
+      status.className = "success";
+    } catch (error) {
+      status.textContent = error.message || "Não foi possível enviar a mensagem. Tente novamente.";
+      status.className = "error";
+    } finally {
+      button.disabled = false;
+      button.textContent = "Enviar mensagem";
+    }
+  });
+})();
+</script>
 </body>
 </html>
