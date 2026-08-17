@@ -63,3 +63,25 @@ A obra-modelo recebeu acabamento técnico e editorial para publicação de teste
 3. Criar páginas transversais por autor, escola literária e competência de interpretação.
 4. Transformar recursos futuros de busca/newsletter somente quando houver infraestrutura real.
 5. Somente após a aprovação integral de Dom Casmurro, escolher e iniciar a segunda obra. Nenhum conteúdo da segunda obra foi iniciado.
+
+## Atualização operacional — 16 de agosto de 2026
+
+### Portal e contato
+
+- GitHub Pages publicado e acessível.
+- Formulário de contato ativo em `contato.html`.
+- API de contato publicada no Cloudflare Worker `hub-literario-api`.
+- Envio transacional configurado pelo Resend com o domínio `hub.pmorollo.com`.
+- Segredo `RESEND_API_KEY` protegido na Cloudflare e ausente do código público.
+- Destinatário administrativo: `pagina.virada@yahoo.com`.
+- Consentimento específico, aviso de minimização e campo antirrobô implementados.
+- Política de Privacidade alinhada ao fluxo real de dados.
+- Homologação ponta a ponta concluída: formulário → Worker → Resend → caixa administrativa, com recebimento confirmado.
+
+### Estado atual
+
+O portal v1.0 está funcional e publicado. Dom Casmurro permanece como única obra e obra-modelo em validação final. Ainda não está autorizada a criação da segunda obra.
+
+### Próximo passo
+
+Executar a homologação pública final de responsividade, acessibilidade, links, SEO técnico, privacidade e segurança. Ao final, registrar evidências e decidir se Dom Casmurro pode ser declarado padrão definitivo do Hub Literário.
