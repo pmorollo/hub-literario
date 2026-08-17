@@ -207,3 +207,53 @@ Se qualquer critério falhar após a publicação:
 ## 11. Ponto de aprovação
 
 Após a aprovação deste plano, a execução começará pela Fase A e seguirá a sequência definida. Qualquer necessidade de mudança estrutural fora do plano deverá ser interrompida e apresentada antes de ser aplicada.
+
+## 12. Atualização de execução — 16 de agosto de 2026
+
+### Concluído
+
+- landing institucional publicada na raiz do GitHub Pages;
+- painel de Dom Casmurro preservado em `/dom-casmurro/`;
+- páginas institucionais, favicon, 404, robots e sitemap publicados;
+- domínio de envio `hub.pmorollo.com` verificado no Resend;
+- Worker `hub-literario-api` criado e publicado na Cloudflare;
+- chave `RESEND_API_KEY` armazenada como segredo criptografado, sem exposição no repositório;
+- formulário de contato conectado à rota pública `/contato`;
+- validação de nome, e-mail, assunto e mensagem implementada;
+- campo invisível antirrobô, consentimento expresso e aviso para não enviar dados sensíveis implementados;
+- Política de Privacidade atualizada para refletir Cloudflare Workers, Resend, finalidade, conservação e direitos do titular;
+- destinatário administrativo corrigido para `pagina.virada@yahoo.com`;
+- teste público completo realizado e entrega do e-mail confirmada pelo responsável.
+
+### Situação das fases
+
+| Fase | Situação |
+| --- | --- |
+| A — Inventário e cópia segura | Concluída |
+| B — Ajustes internos da obra | Concluída no escopo v1.0 |
+| C — Construção da landing | Concluída |
+| D — Validação local | Concluída no escopo técnico inicial |
+| E — Publicação controlada | Concluída |
+| F — Validação pública | Em andamento: contato e entrega de e-mail aprovados; falta auditoria final de interface, acessibilidade e segurança |
+
+### Próximo passo oficial
+
+Executar a **homologação pública final do portal v1.0**, sem iniciar uma segunda obra:
+
+1. testar responsividade a partir de 360 px;
+2. testar navegação por teclado, foco visível, contraste e estrutura para leitores de tela;
+3. validar novamente todos os links, imagens, favicon, página 404 e percurso Landing → Dom Casmurro → Guia → Painel → Landing;
+4. testar mensagens de sucesso e erro do formulário, validações, consentimento, antirrobô e retirada de consentimento;
+5. revisar CORS, limites de tamanho, ausência de segredos no código público e minimização de dados;
+6. conferir canonical, sitemap, robots e o estado real de indexação antes de qualquer solicitação aos mecanismos de busca;
+7. registrar as evidências e declarar ou não Dom Casmurro como padrão definitivo.
+
+### Marco posterior à homologação
+
+Somente após a aprovação integral do portal e de Dom Casmurro:
+
+- iniciar medição de uso e pesquisa de demanda;
+- observar até **300 visitantes qualificados ou 150 pesquisas válidas**, além das solicitações e da conversão de avisos opt-in;
+- manter marketing de aviso separado, opcional e baseado em consentimento específico;
+- revisar a prioridade da segunda obra conforme busca, valor pedagógico e listas atuais de vestibulares;
+- não iniciar a segunda obra antes dessa aprovação.
